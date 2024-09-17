@@ -1,0 +1,64 @@
+<nav class="navbar-logged">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                Awesome Kanban Board
+            </div>
+            <div class="col-md-6 text-end">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" id="profile-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="/avatar.png" />
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="col-md-12 canban-col overflow-auto" id="ready">
+            <h4>Ready</h4>
+        </div>
+        <div id="button-container-ready">
+            <button type="button" class="btn btn-link" id="addNewTask" style="color: red !important">+ Add Card</button>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="col-md-12 canban-col overflow-auto" id="inProgress">
+            <h4>In Progress</h4>
+            <div class="dropdown">
+                <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="addNewTaskInProgress">
+                    + Add Card
+                </button>
+                <ul class="dropdown-menu" id="dropdown-menu">
+                </ul>
+              </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="col-md-12 canban-col overflow-auto" id="finished">
+            <h4>Finished</h4>
+            <div class="dropdown">
+                <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="addNewTaskToFinished">
+                    + Add Card
+                </button>
+                <ul class="dropdown-menu" id="dropdown-menu-finished">
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="row">
+        <div class="col-md-3">Active Tasks: <span id="counter-active-tasks">N</span></div>
+        <div class="col-md-3">Finished Tasks: <span id="counter-finished-tasks">M</span></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3 text-end">Kanban Board by Name Year</div>
+    </div>
+</footer>

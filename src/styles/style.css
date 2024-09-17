@@ -1,0 +1,76 @@
+#app-login-btn {
+  width: 160px;
+}
+
+.navbar-logged {
+  height: 50px;
+  background: #003DCC;
+  line-height: 1.25;
+  color: #fff;
+  font-size: 2em;
+}
+
+#profile-btn img {
+  max-width: 30px;
+}
+
+.container.canban {
+  max-height: 100vh !important;
+}
+
+.canban-col {
+  background-color: #e5e5e5;
+  height: auto;
+  max-height: 80vh;
+  min-height: 20vh;
+  border-radius: 25px;
+  padding: 10px 25px 20px;
+  margin: 15px 0;
+}
+
+.canban-col button {
+  text-decoration: none;
+  color: #717171;
+  font-weight: 600;
+}
+
+.canban-col .btn-link:hover {
+  color: #717171 !important;
+}
+
+.task {
+  background: #fff;
+  margin: 5px 0;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  background: #003DCC;
+}
+
+footer div[class^="col-"] {
+  padding: 0 40px;
+  color: #fff;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
